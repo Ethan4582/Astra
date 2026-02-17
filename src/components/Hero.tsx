@@ -5,14 +5,14 @@ export default function Hero() {
     <div
       className=" text-[16px] "
     >
-       <div
+      <div
         className="min-h-full bg-white text-[rgb(25,_25,_25)] tracking-[-0.08px] leading-[20px]"
         style={{
           fontFamily: '"Inter Tight", sans-serif',
           textDecoration: "rgb(25, 25, 25)",
         }}
       >
-       
+
 
 
 
@@ -53,9 +53,9 @@ export default function Hero() {
                   </div>
                 </a>
               </div>
-              <div className="items-center flex justify-center overflow-hidden relative w-full aspect-[1.74_/_1] rounded-[0.1875rem]">
+              <div className="items-center flex justify-center overflow-hidden relative w-full aspect-[1.74_/_1] rounded-[0.1875rem] group">
                 <div
-                  className="bg-center bg-cover size-full absolute"
+                  className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
                   style={{
                     backgroundImage:
                       'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9beaee00265779917849a6c4de533b3915d6e0c3.webp?generation=1769877867506894&alt=media")',
@@ -91,13 +91,13 @@ export default function Hero() {
         </section>
 
 
-       
 
 
-       
-      
+
+
+
       </div>
-        
+
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { projects } from '../../data';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Footer from '../../../src/components/Footer';
+import ScrollImage from '../../components/ScrollImage';
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -21,14 +22,14 @@ export default async function ProjectPage({ params }) {
   const nextProject = projects.find((p) => p.id === project.nextProjectId);
 
   return (
-    <div className="h-full text-[#191919] text-[16px] leading-[18px] font-['Inter_Tight',sans-serif] font-normal max-w-[1440px] mx-auto">
+    <div className="h-full text-[#191919] text-[16px] leading-[18px] font-['Inter_Tight',sans-serif] font-normal max-w-[1480px] w-full mx-auto">
       <div className="min-h-full bg-white text-[#191919] tracking-[-0.08px] leading-[18px] font-['Inter_Tight',sans-serif] font-normal">
 
         <section>
-          <div className="pt-0 px-[15px] pb-0">
+          <div className="pt-6 px-0 pb-0">
             <div className="items-center flex flex-col justify-start w-full">
-              <div className="grid grid-cols-12 w-full mt-[85px] mb-[75px] auto-rows-auto gap-x-[15px]">
-                <h1 className="font-medium text-[36px] leading-[18px] col-span-12">
+              <div className="grid grid-cols-12 w-full mt-20 mb-14 auto-rows-auto gap-x-[15px] px-2"> {/* Added px-2 here to keep text padded, but main container is now full width */}
+                <h1 className="font-600 weight-800 text-[36px] leading-[18px] col-span-12">
                   {project.title}
                 </h1>
                 <div className="border-t h-[25px] mt-[20px] col-span-12 border-[#f5f5f5]"></div>
@@ -58,19 +59,15 @@ export default async function ProjectPage({ params }) {
                 </a>
               </div>
 
-              <div className="items-center flex justify-center overflow-hidden relative w-full aspect-[1.74/1] rounded-[0.1875rem]">
-                <div
-                  className="bg-center bg-cover size-full absolute"
-                  style={{
-                    backgroundImage: `url("${project.mainImage}")`,
-                    transform: "scale3d(1.02716, 1.02716, 1)"
-                  }}
-                ></div>
-              </div>
+              <ScrollImage
+                src={project.mainImage}
+                containerClassName="items-center pt-14 flex justify-center relative w-full aspect-[1.3/1] rounded-[0.1875rem]" /* Changed aspect from 1.74/1 to 1.3/1 to increase height slightly */
+                className="bg-center bg-cover size-full absolute"
+              />
             </div>
 
-            <div className="grid grid-cols-12 w-full auto-rows-auto gap-x-[15px]">
-              <div className="mt-[45px] col-start-7 col-span-5">
+            <div className="grid grid-cols-12 w-full auto-rows-auto gap-x-[15px] px-1">
+              <div className="mt-8 col-start-7 col-span-5">
                 <p>{project.intro}</p>
                 <div className="border-t h-5 mt-[20px] border-[#f5f5f5]"></div>
 
@@ -90,26 +87,22 @@ export default async function ProjectPage({ params }) {
         </section>
 
         <section>
-          <div className="mt-[125px] pt-0 px-[15px] pb-0">
+          <div className="mt-[125px] pt-0 px-[5px] pb-0">
             <div>
               <div role="list" className="grid grid-cols-1 grid-rows-[auto_auto] gap-[15px]">
                 {project.images.map((img, index) => (
                   <div role="listitem" key={index}>
-                    <div className="items-center flex justify-center overflow-hidden relative w-full aspect-[1.74/1] rounded-[0.1875rem]">
-                      <div
-                        className="bg-center bg-cover size-full absolute"
-                        style={{
-                          backgroundImage: `url("${img}")`,
-                          transform: "scale3d(1.075, 1.075, 1)"
-                        }}
-                      ></div>
-                    </div>
+                    <ScrollImage
+                      src={img}
+                      containerClassName="items-center flex justify-center relative w-full aspect-[1.3/1] rounded-[0.1875rem]" /* Changed aspect from 1.74/1 to 1.3/1 to increase height slightly */
+                      className="bg-center bg-cover size-full absolute"
+                    />
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-[45px] mb-[-45px]">
+            <div className="mt-8 mb-0">
               <div className="border-t h-[25px] border-[#f5f5f5]"></div>
               <div>
                 <div role="list">

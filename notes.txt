@@ -1,0 +1,6 @@
+1. fix all the link 
+ 2 set upd the data array 
+ 3.make the about section 
+ 4. add link transtion component along with the skill 
+
+5. logo fix issue 
