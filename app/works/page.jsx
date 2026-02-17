@@ -7,30 +7,32 @@ import { projects } from '../data'
 const Works = () => {
   return (
     <div>
-      <section className="max-w-7xl mx-auto px-4 py-16 font-['Inter_Tight']">
-        <h1 className="text-center text-2xl font-medium mb-12">
-          All Works<span className="text-sm text-gray-500"> ({projects.length.toString().padStart(2, '0')})</span>
+      <section className="w-full px-4 pt-16 pb-2 font-['Inter_Tight',sans-serif] text-[#191919] text-[16px] leading-[18px] font-medium"> {/* Adjusted pb-2 to reduce space before footer, change this value adjust space */}
+        <h1 className="text-center py-12  text-[36px] font-medium mb-12">
+          All Works<span className="text-[16px] text-gray-500 font-normal"> ({projects.length.toString().padStart(2, '0')})</span>
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid pt-12 grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12">
           {projects.map((project) => (
             <Link
               key={project.id}
               href={`/works/${project.id}`}
               className="group block overflow-hidden rounded-sm"
             >
-              <div className="relative aspect-[1.8/1] bg-gray-100 overflow-hidden">
+              <div className="relative aspect-[1.3/1] bg-gray-100 overflow-hidden">
                 <div
-                  className="absolute inset-0 bg-center bg-cover transition-transform duration-500 ease-in-out group-hover:scale-[1.03]"
+                  className="absolute inset-0 bg-center bg-cover transition-transform duration-400 ease-in-out group-hover:scale-125"
                   style={{
                     backgroundImage: `url("${project.mainImage}")`,
                   }}
                 />
               </div>
-
-              <div className="mt-4">
-                <div className="text-lg font-medium">{project.title}</div>
-                <div className="text-sm text-gray-600">{project.description.substring(0, 50)}... — {project.category}</div>
+              {/* discription */}
+              <div className="mt-2 px-1">
+                <div className="text-[16px] font-medium leading-[18px]">{project.title}</div>
+                <div className="text-[16px] font-medium leading-[18px]">{project.shortDescription}
+                </div>
+                <span className="text-[16px] text-gray-600 leading-[18px]">{project.category}</span>
               </div>
             </Link>
           ))}

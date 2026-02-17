@@ -5,6 +5,7 @@ export const projects = [
     title: 'Health Bridge Rebrand',
     category: 'Brand Identity',
     year: '2024',
+    shortDescription: 'Elegance in Form',
     description: 'A User-Friendly Medical App that brings expert advice and AI diagnostics directly to your fingertips.',
     intro: 'The client’s goal was to make healthcare more accessible and user-friendly while positioning HealthBridge as a trusted solution. Objectives included building trust with users and ensuring the platform’s appeal across diverse demographics.',
     client: 'Pure Wellness Inc.',

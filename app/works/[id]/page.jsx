@@ -21,14 +21,14 @@ export default async function ProjectPage({ params }) {
   const nextProject = projects.find((p) => p.id === project.nextProjectId);
 
   return (
-    <div className="h-full text-black text-[16px] leading-[normal] font-sans max-w-[1440px] mx-auto">
-      <div className="min-h-full bg-white text-[#191919] tracking-[-0.08px] leading-[20px] font-['Inter_Tight']">
+    <div className="h-full text-[#191919] text-[16px] leading-[18px] font-['Inter_Tight',sans-serif] font-normal max-w-[1440px] mx-auto">
+      <div className="min-h-full bg-white text-[#191919] tracking-[-0.08px] leading-[18px] font-['Inter_Tight',sans-serif] font-normal">
 
         <section>
           <div className="pt-0 px-[15px] pb-0">
             <div className="items-center flex flex-col justify-start w-full">
               <div className="grid grid-cols-12 w-full mt-[85px] mb-[75px] auto-rows-auto gap-x-[15px]">
-                <h1 className="font-medium text-[36px] leading-[38.88px] col-span-12">
+                <h1 className="font-medium text-[36px] leading-[18px] col-span-12">
                   {project.title}
                 </h1>
                 <div className="border-t h-[25px] mt-[20px] col-span-12 border-[#f5f5f5]"></div>
