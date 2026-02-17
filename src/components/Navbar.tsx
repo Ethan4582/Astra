@@ -6,7 +6,7 @@ const Navbar = () => {
           <div className="pt-0 pr-[15px] pb-0 pl-[15px]">
             <div className="items-center flex justify-between h-[17px] mt-[25px]">
               <a
-                href="https://aubreyfolio-template.webflow.io/"
+                href="/"
                 className="flex max-w-full gap-[3px]"
               >
                 <img

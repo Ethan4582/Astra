@@ -77,7 +77,7 @@ export default function Hero() {
                   designs that inspire and endure.
                 </p>
                 <a
-                  href="https://aubreyfolio-template.webflow.io/works"
+                  href="/about"
                   className="flex max-w-full overflow-hidden relative h-[19.5px]"
                 >
                   <div className="text-[14px]">
