@@ -3,17 +3,14 @@ import React from 'react'
 const Footer = () => {
   return (
     <div> <footer className="relative">
-      <div className="mt-[155px] pt-0 pr-[15px] pb-0 pl-[15px]">
+      <div className="mt-12 md:mt-20 pt-0 pr-[15px] pb-0 pl-[15px]"> {/* Responsive top margin */}
         <div
           className="border-t h-[25px]"
           style={{ borderTopColor: "rgb(245, 245, 245)" }}
         ></div>
-        <div className="grid-cols-12 grid w-full grid-rows-[auto] gap-[0px_15px]">
+        <div className="grid w-full grid-cols-2 md:grid-cols-12 gap-x-[15px] gap-y-10 md:gap-y-0">
           <div
-            className="items-start flex flex-col justify-start gap-[22px] max-w-[435px] pt-0 pr-[25px] pb-0 pl-0"
-            style={{
-              gridArea: "span 1 / span 5 / span 1 / span 5",
-            }}
+            className="col-span-2 md:col-span-5 items-start flex flex-col justify-start gap-[22px] max-w-[435px] pt-0 pr-[25px] pb-0 pl-0"
           >
             <h3 className="font-medium text-[25px] leading-[30px]">
               Ready to bring your ideas to life? Let’s
@@ -29,8 +26,7 @@ const Footer = () => {
             </a>
           </div>
           <div
-            className="flex flex-col mt-[45px] gap-[14px]"
-            style={{ gridArea: "2 / 7 / 3 / 10" }}
+            className="col-span-1 md:col-start-7 md:col-span-3 flex flex-col md:mt-10 gap-[14px]"
           >
             <div
               className="text-[rgb(117,_117,_117)]"
@@ -96,8 +92,7 @@ const Footer = () => {
             </div>
           </div>
           <div
-            className="flex flex-col mt-[45px] gap-[14px]"
-            style={{ gridArea: "2 / 10 / 3 / 13" }}
+            className="col-span-1 md:col-start-10 md:col-span-3 flex flex-col md:mt-10 gap-[14px]"
           >
             <div
               className="text-[rgb(117,_117,_117)]"
@@ -150,8 +145,7 @@ const Footer = () => {
             </div>
           </div>
           <div
-            className="mt-[125px]"
-            style={{ gridArea: "3 / 1 / 4 / 7" }}
+            className="col-span-1 md:col-span-6 mt-10 md:mt-10"
           >
             <div
               className="text-[rgb(117,_117,_117)] text-[14px]"
@@ -163,17 +157,20 @@ const Footer = () => {
             </div>
           </div>
           <div
-            className="mt-[125px]"
-            style={{ gridArea: "3 / 7 / 4 / 13" }}
+            className="col-span-1 md:col-span-6 mt-10 md:mt-10 flex justify-start md:justify-start"
           >
-            
+            <div
+              className="text-[rgb(117,_117,_117)] text-[14px]"
+            >
+              Made by Slate Department
+            </div>
           </div>
         </div>
       </div>
-      <div className="overflow-hidden w-full pt-[35px] pr-0 pb-0 pl-0 group">
+      <div className="overflow-hidden w-full pt-10 pr-0 pb-0 pl-0 group"> {/* Adjusted padding to match other row gaps */}
         <img
-          src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fbea21be3ca4c7507cff3a72b9ace5d6001a0fab1.svg?generation=1769877867482996&amp;alt=media"
-          className="inline-block overflow-clip align-middle w-full transition-transform duration-400 ease-in-out group-hover:scale-125"
+          src="/assets/footer.png"
+          className="inline-block overflow-clip align-middle w-full transition-transform duration-400 ease-in-out group-hover:scale-115"
           style={{ textDecoration: "rgb(25, 25, 25)" }}
         />
       </div>

@@ -12,15 +12,11 @@ export default function Hero() {
           textDecoration: "rgb(25, 25, 25)",
         }}
       >
-
-
-
-
         <section className="relative">
           <div className="pt-0 pr-[15px] pb-0 pl-[15px]">
             <div className="items-center flex flex-col justify-start w-full">
-              <div className="items-center flex flex-col justify-center text-center gap-[22px] max-w-[510px] pt-[110px] pr-0 pb-[110px] pl-0">
-                <h1 className="font-medium text-center text-[36px] leading-[38.88px]">
+              <div className="items-center flex flex-col justify-center text-center gap-[22px] max-w-[510px] pt-[60px] md:pt-[110px] pr-[10px] pb-[60px] md:pb-[110px] pl-[10px] mx-auto">
+                <h1 className="font-medium text-center text-[30px] md:text-[36px] leading-[1.15] md:leading-[38.88px] tracking-tight">
                   We are a London based digital studio working
                   to create unique experiences worldwide
                 </h1>
@@ -53,7 +49,7 @@ export default function Hero() {
                   </div>
                 </a>
               </div>
-              <div className="items-center flex justify-center overflow-hidden relative w-full aspect-[1.74_/_1] rounded-[0.1875rem] group">
+              <div className="items-center flex justify-center overflow-hidden relative w-full aspect-[3.5/4] md:aspect-[1.74/1] rounded-[0.1875rem] group">
                 <div
                   className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
                   style={{
@@ -64,10 +60,9 @@ export default function Hero() {
                 ></div>
               </div>
             </div>
-            <div className="grid-cols-12 grid w-full grid-rows-[auto] gap-[0px_15px]">
+            <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-[0px_15px]">
               <div
-                className="items-start flex flex-col justify-start mt-[45px] gap-[22px]"
-                style={{ gridArea: "1 / 7 / 2 / 12" }}
+                className="items-start flex flex-col justify-start mt-[15px] md:mt-[45px] gap-[22px] col-span-1 md:col-start-7 md:col-span-5"
               >
                 <p>
                   Astra® is a creative studio crafting
@@ -89,15 +84,7 @@ export default function Hero() {
             </div>
           </div>
         </section>
-
-
-
-
-
-
-
       </div>
-
     </div>
   );
 }

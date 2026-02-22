@@ -5,7 +5,7 @@ const Feature = () => {
     <div>
       <section className="relative">
         <div className="pt-0 pr-[15px] pb-0 pl-[15px]">
-          <div className="items-center flex justify-between w-full h-6 mt-[155px]">
+          <div className="items-center flex justify-between w-full h-6 mt-[80px] md:mt-[155px]">
             <h2 className="font-medium text-[20px] leading-[24px]">
               Featured Work
             </h2>
@@ -19,30 +19,27 @@ const Feature = () => {
           <div className="w-full mt-[25px]">
             <div
               role="list"
-              className="grid-cols-2 grid grid-rows-[auto_auto] gap-[45px_15px]"
+              className="grid grid-cols-1 md:grid-cols-2 gap-[35px_15px] md:gap-[45px_15px]"
             >
               <div role="listitem">
                 <a
                   href="/works/health-bridge"
-                  className="flex flex-col max-w-full gap-[10px] group"
+                  className="flex flex-col max-w-full gap-[12px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
                     <div
-                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
+                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
                           'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F8a24a5cf2bc18b6e0a7c0eb15d6f70d7432595f4.jpg?generation=1769877867483751&alt=media")',
                       }}
                     ></div>
                   </div>
-                  <div className="items-start flex flex-col justify-start leading-[18.4px]">
-                    <div>Health Bridge Rebrand</div>
-                    <div>Elegance in Form</div>
+                  <div className="items-start flex flex-col justify-start leading-[1.2] gap-y-0.5">
+                    <div className="text-[18px] font-medium tracking-tight">Health Bridge Rebrand</div>
+                    <div className="text-[18px] font-medium tracking-tight">Elegance in Form</div>
                     <div
-                      className="text-[rgb(117,_117,_117)]"
-                      style={{
-                        textDecoration: "rgb(117, 117, 117)",
-                      }}
+                      className="text-[rgb(117,_117,_117)] text-[16px]"
                     >
                       Brand Identity
                     </div>
@@ -52,25 +49,22 @@ const Feature = () => {
               <div role="listitem">
                 <a
                   href="works/harmony-marketing"
-                  className="flex flex-col max-w-full gap-[10px] group"
+                  className="flex flex-col max-w-full gap-[12px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
                     <div
-                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
+                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
                           'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F806e0eb2bccfafd3669e81295e00d2087e6bf198.jpg?generation=1769877867477528&alt=media")',
                       }}
                     ></div>
                   </div>
-                  <div className="items-start flex flex-col justify-start leading-[18.4px]">
-                    <div>Harmony Marketing</div>
-                    <div>Leading the Charge</div>
+                  <div className="items-start flex flex-col justify-start leading-[1.2] gap-y-0.5">
+                    <div className="text-[18px] font-medium tracking-tight">Harmony Marketing</div>
+                    <div className="text-[18px] font-medium tracking-tight">Leading the Charge</div>
                     <div
-                      className="text-[rgb(117,_117,_117)]"
-                      style={{
-                        textDecoration: "rgb(117, 117, 117)",
-                      }}
+                      className="text-[rgb(117,_117,_117)] text-[16px]"
                     >
                       Motion Design
                     </div>
@@ -80,25 +74,22 @@ const Feature = () => {
               <div role="listitem">
                 <a
                   href="/works/eco-homes"
-                  className="flex flex-col max-w-full gap-[10px] group"
+                  className="flex flex-col max-w-full gap-[12px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
                     <div
-                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
+                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
                           'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F478fa4ab94eea5efd8f3c1f83fa41db1a37a20ec.jpg?generation=1769877867523101&alt=media")',
                       }}
                     ></div>
                   </div>
-                  <div className="items-start flex flex-col justify-start leading-[18.4px]">
-                    <div>Mind Haven Rebrand</div>
-                    <div>Savor the Future</div>
+                  <div className="items-start flex flex-col justify-start leading-[1.2] gap-y-0.5">
+                    <div className="text-[18px] font-medium tracking-tight">Mind Haven Rebrand</div>
+                    <div className="text-[18px] font-medium tracking-tight">Savor the Future</div>
                     <div
-                      className="text-[rgb(117,_117,_117)]"
-                      style={{
-                        textDecoration: "rgb(117, 117, 117)",
-                      }}
+                      className="text-[rgb(117,_117,_117)] text-[16px]"
                     >
                       Packaging
                     </div>
@@ -108,25 +99,22 @@ const Feature = () => {
               <div role="listitem">
                 <a
                   href="/works/urban-pulse"
-                  className="flex flex-col max-w-full gap-[10px] group"
+                  className="flex flex-col max-w-full gap-[12px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
                     <div
-                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
+                      className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
                           'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F21a88315613c8e530dd50b61c3632d4ef193c1ae.jpg?generation=1769877867508295&alt=media")',
                       }}
                     ></div>
                   </div>
-                  <div className="items-start flex flex-col justify-start leading-[18.4px]">
-                    <div>Flowstream Home</div>
-                    <div>Vision in Action</div>
+                  <div className="items-start flex flex-col justify-start leading-[1.2] gap-y-0.5">
+                    <div className="text-[18px] font-medium tracking-tight">Flowstream Home</div>
+                    <div className="text-[18px] font-medium tracking-tight">Vision in Action</div>
                     <div
-                      className="text-[rgb(117,_117,_117)]"
-                      style={{
-                        textDecoration: "rgb(117, 117, 117)",
-                      }}
+                      className="text-[rgb(117,_117,_117)] text-[16px]"
                     >
                       Development
                     </div>
