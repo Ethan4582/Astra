@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
             <div className="items-start flex flex-col justify-start leading-[19.2px]">
               <a
-                href="https://aubreyfolio-template.webflow.io/template-info/style-guide"
+                href="https://github.com/Ethan4582/Astra"
                 className="flex max-w-full overflow-hidden relative mt-[-1.85px] mb-[-1.85px] pt-[1.85px] pr-0 pb-[1.85px] pl-0"
               >
                 <div>Style Guide</div>
@@ -122,7 +122,7 @@ const Footer = () => {
                 ></div>
               </a>
               <a
-                href="https://aubreyfolio-template.webflow.io/template-info/licenses"
+                href="https://github.com/Ethan4582/Astra"
                 className="flex max-w-full overflow-hidden relative mt-[-1.85px] mb-[-1.85px] pt-[1.85px] pr-0 pb-[1.85px] pl-0"
               >
                 <div>Licenses</div>
@@ -135,7 +135,7 @@ const Footer = () => {
                 ></div>
               </a>
               <a
-                href="https://aubreyfolio-template.webflow.io/template-info/changlog"
+                href="https://github.com/Ethan4582/Astra"
                 className="flex max-w-full overflow-hidden relative mt-[-1.85px] mb-[-1.85px] pt-[1.85px] pr-0 pb-[1.85px] pl-0"
               >
                 <div>Changlog</div>

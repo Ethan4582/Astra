@@ -45,7 +45,7 @@ export const projects = [
     client: 'Green Living Ltd',
     service: 'Web Design',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F8a24a5cf2bc18b6e0a7c0eb15d6f70d7432595f4.jpg?generation=1769877867483751&alt=media',
+    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F478fa4ab94eea5efd8f3c1f83fa41db1a37a20ec.jpg?generation=1769877867523101&alt=media',
     images: [
       'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
       'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'
@@ -62,7 +62,7 @@ export const projects = [
     client: 'Nova Systems',
     service: 'Product Design',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F806e0eb2bccfafd3669e81295e00d2087e6bf198.jpg?generation=1769877867477528&alt=media',
+    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F21a88315613c8e530dd50b61c3632d4ef193c1ae.jpg?generation=1769877867508295&alt=media',
     images: [
       'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
       'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'

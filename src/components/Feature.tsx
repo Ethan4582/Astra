@@ -23,7 +23,7 @@ const Feature = () => {
             >
               <div role="listitem">
                 <a
-                  href="https://aubreyfolio-template.webflow.io/works/health-bridge"
+                  href="/works/health-bridge"
                   className="flex flex-col max-w-full gap-[10px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
@@ -51,7 +51,7 @@ const Feature = () => {
               </div>
               <div role="listitem">
                 <a
-                  href="https://aubreyfolio-template.webflow.io/works/lift-harmony"
+                  href="works/harmony-marketing"
                   className="flex flex-col max-w-full gap-[10px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
@@ -79,7 +79,7 @@ const Feature = () => {
               </div>
               <div role="listitem">
                 <a
-                  href="https://aubreyfolio-template.webflow.io/works/mind-haven"
+                  href="/works/eco-homes"
                   className="flex flex-col max-w-full gap-[10px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
@@ -107,7 +107,7 @@ const Feature = () => {
               </div>
               <div role="listitem">
                 <a
-                  href="https://aubreyfolio-template.webflow.io/works/flowstream"
+                  href="/works/urban-pulse"
                   className="flex flex-col max-w-full gap-[10px] group"
                 >
                   <div className="items-center justify-center overflow-hidden relative aspect-[1.26_/_1] rounded-[0.1875rem]">
