@@ -7,7 +7,7 @@ import { projects } from '../data'
 const Works = () => {
   return (
     <div>
-      <section className="w-full px-4 pt-16 pb-2 font-['Inter_Tight',sans-serif] text-[#191919] text-[16px] leading-[18px] font-medium"> {/* Adjusted pb-2 to reduce space before footer, change this value adjust space */}
+      <section className="w-full px-4 pt-16 pb-2 text-[#191919] text-[16px] leading-[18px] font-medium"> {/* Adjusted pb-2 to reduce space before footer, change this value adjust space */}
         <h1 className="text-center py-12  text-[36px] font-medium mb-12">
           All Works<span className="text-[16px] text-gray-500 font-normal"> ({projects.length.toString().padStart(2, '0')})</span>
         </h1>

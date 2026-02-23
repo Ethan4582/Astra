@@ -63,12 +63,14 @@ const Navbar = () => {
                   ></div>
                 </a>
               </div>
-              <a
-                href="mailto:singhashirwad2003@gmail.com"
-                className="items-center flex justify-center max-w-full overflow-hidden relative h-7 bg-[rgb(240,_240,_240)] text-[13px] pt-0 pr-[11px] pb-0 pl-[11px] rounded-[81.25rem]"
-              >
-                <div className="z-[2]">Get in touch</div>
-              </a>
+             <a
+            href="https://x.com/SinghAshir65848"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="items-center flex justify-center max-w-full overflow-hidden relative h-7 bg-[rgb(240,_240,_240)] text-[13px] pt-0 pr-[11px] pb-0 pl-[11px] rounded-[81.25rem]"
+          >
+            <div className="z-[2]">Get in touch</div>
+          </a>
             </div>
 
             {/* Mobile Menu Button */}

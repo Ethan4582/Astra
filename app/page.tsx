@@ -6,9 +6,9 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-      <Hero/>
-      <Feature/>
-      <Footer/>
+      <Hero />
+      <Feature id="feature" />
+      <Footer />
     </div>
   )
 }

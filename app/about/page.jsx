@@ -50,7 +50,7 @@ const About = () => {
   }
 
   return (
-    <div className="min-h-full bg-white text-[#191919] font-['Inter_Tight',sans-serif] font-normal leading-normal max-w-[1440px] w-full mx-auto px-0">
+    <div className="min-h-full bg-white text-[#191919] font-normal leading-normal max-w-[1440px] w-full mx-auto px-0">
 
       {/* Hero Section */}
       <section className="pt-[60px] md:pt-[80px] px-2 md:px-4 pb-[40px] md:pb-[60px]">
@@ -157,13 +157,13 @@ const About = () => {
 
       {/* Featured Clients Section */}
       <section className="px-2 md:px-4 py-[60px] md:py-[80px] border-t border-[#f5f5f5]">
-         <div className="aspect-[3/2.4] bg-[#f5f5f5] pb-8 rounded-[0.1875rem] overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="James Clarke"
-                className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
-              />
-              </div>
+        <div className="aspect-[3/2.4] bg-[#f5f5f5] pb-8 rounded-[0.1875rem] overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="James Clarke"
+            className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
+          />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[15px]">
           <div className="col-span-1 md:col-span-4 text-[16px] text-[#191919] mb-[40px] md:mb-0 uppercase text-[12px] tracking-wider font-medium opacity-60">
             Featured Clients

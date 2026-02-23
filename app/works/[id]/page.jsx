@@ -22,8 +22,8 @@ export default async function ProjectPage({ params }) {
   const nextProject = projects.find((p) => p.id === project.nextProjectId);
 
   return (
-    <div className="h-full text-[#191919] text-[16px] leading-[18px] font-['Inter_Tight',sans-serif] font-normal max-w-[1480px] w-full mx-auto">
-      <div className="min-h-full bg-white text-[#191919] tracking-[-0.08px] leading-[18px] font-['Inter_Tight',sans-serif] font-normal">
+    <div className="h-full text-[#191919] text-[16px] leading-[18px] font-normal max-w-[1480px] w-full mx-auto">
+      <div className="min-h-full bg-white text-[#191919] tracking-[-0.08px] leading-[18px] font-normal">
 
         <section>
           <div className="pt-6 px-0 pb-0">

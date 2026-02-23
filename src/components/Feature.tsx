@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Feature = () => {
+const Feature = ({ id }: { id?: string }) => {
   return (
-    <div>
+    <div id={id}>
       <section className="relative">
         <div className="pt-0 pr-[15px] pb-0 pl-[15px]">
           <div className="items-center flex justify-between w-full h-6 mt-[80px] md:mt-[155px]">

@@ -8,7 +8,6 @@ export default function Hero() {
       <div
         className="min-h-full bg-white text-[rgb(25,_25,_25)] tracking-[-0.08px] leading-[20px]"
         style={{
-          fontFamily: '"Inter Tight", sans-serif',
           textDecoration: "rgb(25, 25, 25)",
         }}
       >
@@ -17,11 +16,11 @@ export default function Hero() {
             <div className="items-center flex flex-col justify-start w-full">
               <div className="items-center flex flex-col justify-center text-center gap-[22px] max-w-[510px] pt-[60px] md:pt-[110px] pr-[10px] pb-[60px] md:pb-[110px] pl-[10px] mx-auto">
                 <h1 className="font-medium text-center text-[30px] md:text-[36px] leading-[1.15] md:leading-[38.88px] tracking-tight">
-                  We are a London based digital studio working
+                  We are a Netherland based digital studio working
                   to create unique experiences worldwide
                 </h1>
                 <a
-                  href="/#about-section"
+                  href="/#feature"
                   className="flex max-w-full text-center gap-[3px]"
                 >
                   <div className="text-center">
@@ -67,7 +66,7 @@ export default function Hero() {
                 <p>
                   Astra® is a creative studio crafting
                   impactful brands and seamless digital
-                  experiences. Rooted in London, we collaborate
+                  experiences. Rooted in Netherland, we collaborate
                   globally, shaping ideas into purposeful
                   designs that inspire and endure.
                 </p>
