@@ -1,4 +1,21 @@
+"use client";
 import React from "react";
+import { motion, Variants } from "framer-motion";
+
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 2.25, ease: "easeOut" } },
+};
+
+const fadeInUpDelayed: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 2.4, ease: "easeOut" } },
+};
+
+const fadeInLeft: Variants = {
+  hidden: { opacity: 0, x: -40 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.7, delay: 2.5, ease: "easeOut" } },
+};
 
 export default function Hero() {
   return (
@@ -15,11 +32,21 @@ export default function Hero() {
           <div className="pt-0 pr-[15px] pb-0 pl-[15px]">
             <div className="items-center flex flex-col justify-start w-full">
               <div className="items-center flex flex-col justify-center text-center gap-[22px] max-w-[510px] pt-[60px] md:pt-[110px] pr-[10px] pb-[60px] md:pb-[110px] pl-[10px] mx-auto">
-                <h1 className="font-medium text-center text-[30px] md:text-[36px] leading-[1.15] md:leading-[38.88px] tracking-tight">
+                <motion.h1
+                  variants={fadeInUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  className="font-medium text-center text-[30px] md:text-[36px] leading-[1.15] md:leading-[38.88px] tracking-tight"
+                >
                   We are a Netherland based digital studio working
                   to create unique experiences worldwide
-                </h1>
-                <a
+                </motion.h1>
+                <motion.a
+                  variants={fadeInUpDelayed}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
                   href="/#feature"
                   className="flex max-w-full text-center gap-[3px]"
                 >
@@ -46,9 +73,15 @@ export default function Hero() {
                       />
                     </div>
                   </div>
-                </a>
+                </motion.a>
               </div>
-              <div className="items-center flex justify-center overflow-hidden relative w-full aspect-[3.5/4] md:aspect-[1.74/1] rounded-[0.1875rem] group">
+              <motion.div
+                variants={fadeInUpDelayed}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="items-center flex justify-center overflow-hidden relative w-full aspect-[3.5/4] md:aspect-[1.74/1] rounded-[0.1875rem] group"
+              >
                 <div
                   className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
                   style={{
@@ -57,10 +90,14 @@ export default function Hero() {
                     transform: "scale3d(1.03498, 1.03498, 1)",
                   }}
                 ></div>
-              </div>
+              </motion.div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-[0px_15px]">
-              <div
+              <motion.div
+                variants={fadeInLeft}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
                 className="items-start flex flex-col justify-start mt-[15px] md:mt-[45px] gap-[22px] col-span-1 md:col-start-7 md:col-span-5"
               >
                 <p>
@@ -79,7 +116,7 @@ export default function Hero() {
                   </div>
                   <div className="border-t -mt-px absolute w-full left-[0%] right-[0%] bottom-[0%] border-[rgb(25,_25,_25)]"></div>
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>

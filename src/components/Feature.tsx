@@ -1,11 +1,34 @@
+"use client";
 import React from 'react'
+import { motion, Variants } from "framer-motion";
+
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
+
+const fadeInLeft: Variants = {
+  hidden: { opacity: 0, x: -40 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
+
+const fadeInRight: Variants = {
+  hidden: { opacity: 0, x: 40 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
 
 const Feature = ({ id }: { id?: string }) => {
   return (
     <div id={id}>
       <section className="relative">
         <div className="pt-0 pr-[15px] pb-0 pl-[15px]">
-          <div className="items-center flex justify-between w-full h-6 mt-[80px] md:mt-[155px]">
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="items-center flex justify-between w-full h-6 mt-[80px] md:mt-[155px]"
+          >
             <h2 className="font-medium text-[20px] leading-[24px]">
               Featured Work
             </h2>
@@ -15,13 +38,19 @@ const Feature = ({ id }: { id?: string }) => {
             >
               <div className="z-[2]">View all</div>
             </a>
-          </div>
+          </motion.div>
           <div className="w-full mt-[25px]">
             <div
               role="list"
               className="grid grid-cols-1 md:grid-cols-2 gap-[35px_15px] md:gap-[45px_15px]"
             >
-              <div role="listitem">
+              <motion.div
+                role="listitem"
+                variants={fadeInLeft}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+              >
                 <a
                   href="/works/health-bridge"
                   className="flex flex-col max-w-full gap-[12px] group"
@@ -45,8 +74,14 @@ const Feature = ({ id }: { id?: string }) => {
                     </div>
                   </div>
                 </a>
-              </div>
-              <div role="listitem">
+              </motion.div>
+              <motion.div
+                role="listitem"
+                variants={fadeInRight}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+              >
                 <a
                   href="works/harmony-marketing"
                   className="flex flex-col max-w-full gap-[12px] group"
@@ -70,8 +105,14 @@ const Feature = ({ id }: { id?: string }) => {
                     </div>
                   </div>
                 </a>
-              </div>
-              <div role="listitem">
+              </motion.div>
+              <motion.div
+                role="listitem"
+                variants={fadeInLeft}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+              >
                 <a
                   href="/works/eco-homes"
                   className="flex flex-col max-w-full gap-[12px] group"
@@ -95,8 +136,14 @@ const Feature = ({ id }: { id?: string }) => {
                     </div>
                   </div>
                 </a>
-              </div>
-              <div role="listitem">
+              </motion.div>
+              <motion.div
+                role="listitem"
+                variants={fadeInRight}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
+              >
                 <a
                   href="/works/urban-pulse"
                   className="flex flex-col max-w-full gap-[12px] group"
@@ -120,12 +167,11 @@ const Feature = ({ id }: { id?: string }) => {
                     </div>
                   </div>
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
-
     </div>
   )
 }

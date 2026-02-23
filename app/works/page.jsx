@@ -1,40 +1,65 @@
+'use client';
 
 import React from 'react'
 import Link from 'next/link'
 import Footer from '../../src/components/Footer'
 import { projects } from '../data'
+import { motion } from 'framer-motion'
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 2.25, ease: "easeOut" } },
+};
+
+const fadeInUpScroll = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
 
 const Works = () => {
   return (
     <div>
       <section className="w-full px-4 pt-16 pb-2 text-[#191919] text-[16px] leading-[18px] font-medium"> {/* Adjusted pb-2 to reduce space before footer, change this value adjust space */}
-        <h1 className="text-center py-12  text-[36px] font-medium mb-12">
+        <motion.h1
+          className="text-center py-12  text-[36px] font-medium mb-12"
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           All Works<span className="text-[16px] text-gray-500 font-normal"> ({projects.length.toString().padStart(2, '0')})</span>
-        </h1>
+        </motion.h1>
 
         <div className="grid pt-12 grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12">
           {projects.map((project) => (
-            <Link
+            <motion.div
               key={project.id}
-              href={`/works/${project.id}`}
-              className="group block overflow-hidden rounded-sm"
+              variants={fadeInUpScroll}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
             >
-              <div className="relative aspect-[1.3/1] bg-gray-100 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-center bg-cover transition-transform duration-400 ease-in-out group-hover:scale-125"
-                  style={{
-                    backgroundImage: `url("${project.mainImage}")`,
-                  }}
-                />
-              </div>
-              {/* discription */}
-              <div className="mt-2 px-1">
-                <div className="text-[16px] font-medium leading-[18px]">{project.title}</div>
-                <div className="text-[16px] font-medium leading-[18px]">{project.shortDescription}
+              <Link
+                href={`/works/${project.id}`}
+                className="group block overflow-hidden rounded-sm"
+              >
+                <div className="relative aspect-[1.3/1] bg-gray-100 overflow-hidden">
+                  <div
+                    className="absolute inset-0 bg-center bg-cover transition-transform duration-400 ease-in-out group-hover:scale-125"
+                    style={{
+                      backgroundImage: `url("${project.mainImage}")`,
+                    }}
+                  />
                 </div>
-                <span className="text-[16px] text-gray-600 leading-[18px]">{project.category}</span>
-              </div>
-            </Link>
+                {/* discription */}
+                <div className="mt-2 px-1">
+                  <div className="text-[16px] font-medium leading-[18px]">{project.title}</div>
+                  <div className="text-[16px] font-medium leading-[18px]">{project.shortDescription}
+                  </div>
+                  <span className="text-[16px] text-gray-600 leading-[18px]">{project.category}</span>
+                </div>
+              </Link>
+            </motion.div>
           ))}
         </div>
       </section>

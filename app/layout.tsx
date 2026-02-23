@@ -3,6 +3,7 @@ import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/src/components/Navbar";
 import SmoothScroll from "./components/SmoothScroll";
+import Revealer from "./components/Revealer";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${inter.variable} antialiased`}
       >
+        <Revealer />
         <SmoothScroll />
         <Navbar />
         {children}

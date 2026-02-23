@@ -51,7 +51,7 @@ const Footer = () => {
                 ></div>
               </a>
               <a
-                href="https://aubreyfolio-template.webflow.io/works"
+                href="/"
                 className="flex max-w-full overflow-hidden relative mt-[-1.85px] mb-[-1.85px] pt-[1.85px] pr-0 pb-[1.85px] pl-0"
               >
                 <div>Works</div>
@@ -64,7 +64,7 @@ const Footer = () => {
                 ></div>
               </a>
               <a
-                href="https://aubreyfolio-template.webflow.io/about"
+                href="/about"
                 className="flex max-w-full overflow-hidden relative mt-[-1.85px] mb-[-1.85px] pt-[1.85px] pr-0 pb-[1.85px] pl-0"
               >
                 <div>About</div>
@@ -159,7 +159,7 @@ const Footer = () => {
           <div
             className="col-span-1 md:col-span-6 mt-10 md:mt-10 flex justify-start md:justify-start"
           >
-           
+
           </div>
         </div>
       </div>

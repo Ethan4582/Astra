@@ -3,6 +3,26 @@ import React, { useState } from 'react';
 import Footer from '@/src/components/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 2.25, ease: "easeOut" } }, // Add initial delay for the hero of the page
+};
+
+const fadeInUpScroll = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
+
+const fadeInLeft = {
+  hidden: { opacity: 0, x: -40 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
+
+const fadeInRight = {
+  hidden: { opacity: 0, x: 40 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" } },
+};
+
 const About = () => {
   const [activeAccordion, setActiveAccordion] = useState(1);
   const [hoveredClient, setHoveredClient] = useState('Pears');
@@ -54,7 +74,13 @@ const About = () => {
 
       {/* Hero Section */}
       <section className="pt-[60px] md:pt-[80px] px-2 md:px-4 pb-[40px] md:pb-[60px]">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-[15px]">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-12 gap-[15px]"
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <div className="col-span-1 md:col-span-12 mb-[40px] md:mb-[60px]">
             <h1 className="text-[36px] md:text-[50px] leading-[1.05] font-medium max-w-[650px] tracking-tight text-[#191919]">
               We create bold solutions for<br />those ready to stand out
@@ -66,13 +92,19 @@ const About = () => {
           <div className="col-span-1 md:col-start-7 md:col-span-6 text-[16px] leading-[1.4] text-[#191919]">
             Welcome to our studio. We&apos;re a small but passionate team of web designers and developers who love turning ideas into reality. Whether you&apos;re a startup or an established business, we make the web work for you with clean, modern designs and user-friendly solutions.
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Team Section */}
       <section className="px-1 md:px-2 pb-[80px] md:pb-[100px]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[5px] md:gap-[10px]">
-          <div className="flex flex-col gap-[15px] group cursor-pointer">
+          <motion.div
+            className="flex flex-col gap-[15px] group cursor-pointer"
+            variants={fadeInLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             <div className="aspect-[3/3.4] bg-[#f5f5f5] rounded-[0.1875rem] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2787&auto=format&fit=crop"
@@ -84,8 +116,14 @@ const About = () => {
               <div className="text-[#191919]">James Clarke</div>
               <div className="text-[#757575]">Creative Director</div>
             </div>
-          </div>
-          <div className="flex flex-col gap-[15px] group cursor-pointer">
+          </motion.div>
+          <motion.div
+            className="flex flex-col gap-[15px] group cursor-pointer"
+            variants={fadeInRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             <div className="aspect-[3/3.4] bg-[#f5f5f5] rounded-[0.1875rem] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=2787&auto=format&fit=crop"
@@ -97,12 +135,19 @@ const About = () => {
               <div className="text-[#191919]">Daniel Harris</div>
               <div className="text-[#757575]">Technical Director</div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="px-2 md:px-4 py-[60px] md:py-[80px] border-t border-[#f5f5f5]">
+      <motion.section
+        id="services"
+        className="px-2 md:px-4 py-[60px] md:py-[80px] border-t border-[#f5f5f5]"
+        variants={fadeInUpScroll}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[15px]">
           <div className="col-span-1 md:col-span-4 text-[16px] text-[#191919] mb-[40px] md:mb-0 uppercase text-[12px] tracking-wider font-medium opacity-60">
             Our Services
@@ -153,10 +198,16 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Featured Clients Section */}
-      <section className="px-2 md:px-4 py-[60px] md:py-[80px] border-t border-[#f5f5f5]">
+      <motion.section
+        className="px-2 md:px-4 py-[60px] md:py-[80px] border-t border-[#f5f5f5]"
+        variants={fadeInUpScroll}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         <div className="aspect-[3/2.4] bg-[#f5f5f5] pb-8 rounded-[0.1875rem] overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -195,7 +246,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <Footer />
     </div>

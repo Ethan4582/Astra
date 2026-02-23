@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Footer from '../../../src/components/Footer';
 import ScrollImage from '../../components/ScrollImage';
+import { RevealHero, RevealScroll } from '../../../src/components/RevealWrapper';
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -28,45 +29,49 @@ export default async function ProjectPage({ params }) {
         <section>
           <div className="pt-6 px-0 pb-0">
             <div className="items-center flex flex-col justify-start w-full">
-              <div className="grid grid-cols-12 w-full mt-20 mb-14 auto-rows-auto gap-x-[15px] px-2"> {/* Added px-2 here to keep text padded, but main container is now full width */}
-                <h1 className="font-600 weight-800 text-[36px] leading-[18px] col-span-12">
-                  {project.title}
-                </h1>
-                <div className="border-t h-[25px] mt-[20px] col-span-12 border-[#f5f5f5]"></div>
+              <RevealHero>
+                <div className="grid grid-cols-12 w-full mt-20 mb-14 auto-rows-auto gap-x-[15px] px-2"> {/* Added px-2 here to keep text padded, but main container is now full width */}
+                  <h1 className="font-600 weight-800 text-[36px] leading-[18px] col-span-12">
+                    {project.title}
+                  </h1>
+                  <div className="border-t h-[25px] mt-[20px] col-span-12 border-[#f5f5f5]"></div>
 
-                <div className="flex col-span-3">
-                  <div className="text-[14px]">(</div>
-                  <div className="text-[14px]">{project.year}</div>
-                  <div className="text-[14px]">)</div>
+                  <div className="flex col-span-3">
+                    <div className="text-[14px]">(</div>
+                    <div className="text-[14px]">{project.year}</div>
+                    <div className="text-[14px]">)</div>
+                  </div>
+
+                  <div className="max-w-[450px] col-span-4">
+                    <p>{project.description}</p>
+                  </div>
+
+                  <a
+                    href={project.previewLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="items-center self-start flex justify-end justify-self-end max-w-full gap-[2px] col-start-10 col-span-3 row-start-3"
+                  >
+                    <div className="text-[14px]">Preview Link</div>
+                    <img
+                      src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c3d71e7824ce7ed4be5834af58ab822e94790ab.svg?generation=1771359199353376&amp;alt=media"
+                      className="block overflow-clip align-middle w-[15px] h-[15px]"
+                      alt="arrow"
+                    />
+                  </a>
                 </div>
+              </RevealHero>
 
-                <div className="max-w-[450px] col-span-4">
-                  <p>{project.description}</p>
-                </div>
-
-                <a
-                  href={project.previewLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="items-center self-start flex justify-end justify-self-end max-w-full gap-[2px] col-start-10 col-span-3 row-start-3"
-                >
-                  <div className="text-[14px]">Preview Link</div>
-                  <img
-                    src="https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c3d71e7824ce7ed4be5834af58ab822e94790ab.svg?generation=1771359199353376&amp;alt=media"
-                    className="block overflow-clip align-middle w-[15px] h-[15px]"
-                    alt="arrow"
-                  />
-                </a>
-              </div>
-
-              <ScrollImage
-                src={project.mainImage}
-                containerClassName="items-center pt-14 flex justify-center relative w-full aspect-[1.3/1] rounded-[0.1875rem]" /* Changed aspect from 1.74/1 to 1.3/1 to increase height slightly */
-                className="bg-center bg-cover size-full absolute"
-              />
+              <RevealScroll className="w-full">
+                <ScrollImage
+                  src={project.mainImage}
+                  containerClassName="items-center pt-14 flex justify-center relative w-full aspect-[1.3/1] rounded-[0.1875rem]" /* Changed aspect from 1.74/1 to 1.3/1 to increase height slightly */
+                  className="bg-center bg-cover size-full absolute"
+                />
+              </RevealScroll>
             </div>
 
-            <div className="grid grid-cols-12 w-full auto-rows-auto gap-x-[15px] px-1">
+            <RevealScroll className="grid grid-cols-12 w-full auto-rows-auto gap-x-[15px] px-1">
               <div className="mt-8 col-start-7 col-span-5">
                 <p>{project.intro}</p>
                 <div className="border-t h-5 mt-[20px] border-[#f5f5f5]"></div>
@@ -82,7 +87,7 @@ export default async function ProjectPage({ params }) {
                   </div>
                 </div>
               </div>
-            </div>
+            </RevealScroll>
           </div>
         </section>
 
@@ -91,18 +96,20 @@ export default async function ProjectPage({ params }) {
             <div>
               <div role="list" className="grid grid-cols-1 grid-rows-[auto_auto] gap-[15px]">
                 {project.images.map((img, index) => (
-                  <div role="listitem" key={index}>
-                    <ScrollImage
-                      src={img}
-                      containerClassName="items-center flex justify-center relative w-full aspect-[1.3/1] rounded-[0.1875rem]" /* Changed aspect from 1.74/1 to 1.3/1 to increase height slightly */
-                      className="bg-center bg-cover size-full absolute"
-                    />
-                  </div>
+                  <RevealScroll key={index}>
+                    <div role="listitem">
+                      <ScrollImage
+                        src={img}
+                        containerClassName="items-center flex justify-center relative w-full aspect-[1.3/1] rounded-[0.1875rem]" /* Changed aspect from 1.74/1 to 1.3/1 to increase height slightly */
+                        className="bg-center bg-cover size-full absolute"
+                      />
+                    </div>
+                  </RevealScroll>
                 ))}
               </div>
             </div>
 
-            <div className="mt-8 mb-0">
+            <RevealScroll className="mt-8 mb-0">
               <div className="border-t h-[25px] border-[#f5f5f5]"></div>
               <div>
                 <div role="list">
@@ -116,7 +123,7 @@ export default async function ProjectPage({ params }) {
                   )}
                 </div>
               </div>
-            </div>
+            </RevealScroll>
           </div>
         </section>
 
