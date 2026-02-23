@@ -54,7 +54,7 @@ export default function Hero() {
                   className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-125"
                   style={{
                     backgroundImage:
-                      'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F9beaee00265779917849a6c4de533b3915d6e0c3.webp?generation=1769877867506894&alt=media")',
+                      'url("https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669&auto=format&fit=crop")',
                     transform: "scale3d(1.03498, 1.03498, 1)",
                   }}
                 ></div>

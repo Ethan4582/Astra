@@ -159,11 +159,7 @@ const Footer = () => {
           <div
             className="col-span-1 md:col-span-6 mt-10 md:mt-10 flex justify-start md:justify-start"
           >
-            <div
-              className="text-[rgb(117,_117,_117)] text-[14px]"
-            >
-              Made by Slate Department
-            </div>
+           
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@ const Feature = () => {
                       className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
-                          'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F8a24a5cf2bc18b6e0a7c0eb15d6f70d7432595f4.jpg?generation=1769877867483751&alt=media")',
+                          'url("https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2667&auto=format&fit=crop")',
                       }}
                     ></div>
                   </div>
@@ -56,7 +56,7 @@ const Feature = () => {
                       className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
-                          'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F806e0eb2bccfafd3669e81295e00d2087e6bf198.jpg?generation=1769877867477528&alt=media")',
+                          'url("https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=80&w=2671&auto=format&fit=crop")',
                       }}
                     ></div>
                   </div>
@@ -81,7 +81,7 @@ const Feature = () => {
                       className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
-                          'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F478fa4ab94eea5efd8f3c1f83fa41db1a37a20ec.jpg?generation=1769877867523101&alt=media")',
+                          'url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2670&auto=format&fit=crop")',
                       }}
                     ></div>
                   </div>
@@ -106,7 +106,7 @@ const Feature = () => {
                       className="bg-center bg-cover size-full absolute transition-transform duration-400 ease-in-out group-hover:scale-110"
                       style={{
                         backgroundImage:
-                          'url("https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F21a88315613c8e530dd50b61c3632d4ef193c1ae.jpg?generation=1769877867508295&alt=media")',
+                          'url("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop")',
                       }}
                     ></div>
                   </div>

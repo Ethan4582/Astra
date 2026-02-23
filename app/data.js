@@ -11,10 +11,10 @@ export const projects = [
     client: 'Pure Wellness Inc.',
     service: 'Brand Identity',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F8a24a5cf2bc18b6e0a7c0eb15d6f70d7432595f4.jpg?generation=1769877867483751&alt=media',
+    mainImage: 'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=2667&auto=format&fit=crop',
     images: [
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'
+      'https://images.unsplash.com/photo-1481481600465-36a0d6ab61b5?q=80&w=2674&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1510936111840-65e151ad71bb?q=80&w=2690&auto=format&fit=crop'
     ],
     nextProjectId: 'harmony-marketing'
   },
@@ -28,10 +28,10 @@ export const projects = [
     client: 'Harmony Corp',
     service: 'Motion Design',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F806e0eb2bccfafd3669e81295e00d2087e6bf198.jpg?generation=1769877867477528&alt=media',
+    mainImage: 'https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=80&w=2671&auto=format&fit=crop',
     images: [
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'
+      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1516962215378-7fa2e137ae93?q=80&w=2669&auto=format&fit=crop'
     ],
     nextProjectId: 'eco-homes'
   },
@@ -45,10 +45,10 @@ export const projects = [
     client: 'Green Living Ltd',
     service: 'Web Design',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F478fa4ab94eea5efd8f3c1f83fa41db1a37a20ec.jpg?generation=1769877867523101&alt=media',
+    mainImage: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2670&auto=format&fit=crop',
     images: [
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=2670&auto=format&fit=crop'
     ],
     nextProjectId: 'tech-nova'
   },
@@ -62,10 +62,10 @@ export const projects = [
     client: 'Nova Systems',
     service: 'Product Design',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F21a88315613c8e530dd50b61c3632d4ef193c1ae.jpg?generation=1769877867508295&alt=media',
+    mainImage: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop',
     images: [
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2670&auto=format&fit=crop'
     ],
     nextProjectId: 'artisan-brew'
   },
@@ -79,10 +79,10 @@ export const projects = [
     client: 'Craft Works',
     service: 'Packaging Design',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F8a24a5cf2bc18b6e0a7c0eb15d6f70d7432595f4.jpg?generation=1769877867483751&alt=media',
+    mainImage: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669&auto=format&fit=crop',
     images: [
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2670&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1600585154526-990dced4ea0d?q=80&w=2670&auto=format&fit=crop'
     ],
     nextProjectId: 'urban-pulse'
   },
@@ -96,10 +96,10 @@ export const projects = [
     client: 'City Arts Council',
     service: 'Photography',
     previewLink: 'https://www.behance.net/',
-    mainImage: 'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F806e0eb2bccfafd3669e81295e00d2087e6bf198.jpg?generation=1769877867477528&alt=media',
+    mainImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop',
     images: [
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2F3c363f46b180d5987ce9c942f0b4a39e5dc831ce.jpg?generation=1771359199357913&alt=media',
-      'https://storage.googleapis.com/download/storage/v1/b/prd-shared-services.firebasestorage.app/o/h2m-assets%2Fefd41bdab5faf3950e45577e058f0ce6e0326654.jpg?generation=1771359205693452&alt=media'
+      'https://images.unsplash.com/photo-1600607687644-c7171b42498b?q=80&w=2670&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2670&auto=format&fit=crop'
     ],
     nextProjectId: 'health-bridge'
   }
