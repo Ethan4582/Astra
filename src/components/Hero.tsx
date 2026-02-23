@@ -4,17 +4,17 @@ import { motion, Variants } from "framer-motion";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 2.25, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.9, ease: "easeOut" } },
 };
 
 const fadeInUpDelayed: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 2.4, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 1.0, ease: "easeOut" } },
 };
 
 const fadeInLeft: Variants = {
   hidden: { opacity: 0, x: -40 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.7, delay: 2.5, ease: "easeOut" } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5, delay: 1.1, ease: "easeOut" } },
 };
 
 export default function Hero() {

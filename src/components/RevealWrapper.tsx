@@ -4,12 +4,12 @@ import { motion, Variants } from "framer-motion";
 
 const fadeInUp: Variants = {
    hidden: { opacity: 0, y: 40 },
-   visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 2.25, ease: "easeOut" } },
+   visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.9, ease: "easeOut" } },
 };
 
 const fadeInUpScroll: Variants = {
    hidden: { opacity: 0, y: 40 },
-   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
 export const RevealHero = ({ children }: { children: React.ReactNode }) => (

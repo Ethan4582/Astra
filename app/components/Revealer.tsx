@@ -10,8 +10,8 @@ export default function Revealer() {
 
       gsap.to(".revealer", {
          scaleY: 0,
-         duration: 1.25,
-         delay: 1,
+         duration: 0.8,
+         delay: 0.4,
          ease: "hop",
       });
    }, []);
